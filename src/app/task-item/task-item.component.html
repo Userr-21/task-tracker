@@ -20,7 +20,7 @@
   </div>
   
   <div class="form-group" *ngIf="this.edit === true">
-    <h4 align="center">Update Task Form</h4>
+    <h4>Update Task</h4>
     <input
       type="text"
       #updatedName
@@ -38,8 +38,7 @@
     <div class="card-content">
       <input type="date" value="{{ data.date.split('T')[0] }}" #updatedDate />
       <input type="checkbox" #updatedStatus />
-    </div>
-    <button
+      <button
       class="btn btn-primary"
       (click)="
         updateTask({
@@ -50,8 +49,10 @@
         })
       "
     >
-      Update Task
+      Update
     </button>
+    </div>
+
   </div>
 
 </div>

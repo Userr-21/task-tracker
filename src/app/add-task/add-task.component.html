@@ -13,6 +13,7 @@
   </div>
   <!--add the tasks-->
   <div class="add-task">
+    <label for="exampleFormControlTextarea1" class="form-label">Task:</label>
     <!--add tasks heading-->
     <input
       type="text"
@@ -23,20 +24,18 @@
     />
     <!--add tasks-->
     <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Task:</label>
       <textarea
         class="form-control"
         #description
         id="exampleFormControlTextarea1"
         placeholder="Enter Task..."
-        rows="3">
+        rows="3"
+       >
       </textarea>
     </div>
     <!--add tasks date-->
     <div class="mb-3 optional-data">
-      <div class="date">
-        <input #date type="date" />
-      </div>  
+      <input #date type="date" />
     </div>
     <!--save the tasks-->
     <button
